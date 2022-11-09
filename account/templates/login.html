@@ -1,10 +1,36 @@
+{% load static %}
 
-{% block container %}
-<h1>로그인</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<form method="POST">
-    {% csrf_token %}
-    {{ login_form }}
-    <input type="submit" value="Submit">
-</form>
-{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <img class="back_img_h" src="{% static 'img/account/logo4.png' %}">
+    <div class="login-container">
+        <img class="login-img" src="{% static 'img/account/logo3.png' %}">
+        {% block container %}
+        <div class="container">
+            <form method="POST">
+                {% csrf_token %}
+                {{ login_form }}
+                <input class="login-btn" type="submit" value="로그인">
+            </form>
+        </div>
+        {% endblock %}
+        <div class="container2">
+            <input type="checkbox" class="login-check"><span class="login-stay">로그인 유지</span>
+            <span class="login-search">아이디/비밀번호 찾기</span>
+            <span class="login-first">머리뷰에 처음이시라면..!</span>
+            <span class="signup">회원가입</span>
+        </div>    
+    </div>
+</body>
+
+</html>

@@ -115,8 +115,10 @@ th > label {
 #id_question {
     font-family: 'Pretendard-Regular';
     width: 40vw;
+    height: 40vh;
     border: solid #707070 1px;
 }
+#id_question:focus {outline: none;}
 
 #id_q_photo {
     color: #A79EB3;

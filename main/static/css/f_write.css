@@ -18,7 +18,7 @@ body {
 
 form {
     margin-left: 1rem;
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 /* 네브바 시작 */
@@ -107,19 +107,24 @@ ul {
     font-size: 15px;
     margin-left: 1rem;
 }
+.f_button:hover {
+    color: #8F87A7;
+}
 
 p > label {
     display: none;
 }
 
-#id_p_title {
-    height: 3.5ex;    
+#id_p_title {height: 3.5ex;}
+#id_p_body {
+    height: 40vh;
 }
 #id_p_title, #id_p_body {
     font-family: 'Pretendard-Regular';
     margin-left: 1rem;
-    width: 40vw;
+    width: 38vw;
     border: solid #707070 1px;
+    border-radius: 3px;
 }
 
 #id_p_photo {
@@ -132,3 +137,6 @@ p > label {
     font-family: 'Pretendard-Regular';
     margin-left: 1rem;
 }
+
+input:focus {outline: none;}
+#id_p_body:focus {outline: none;}

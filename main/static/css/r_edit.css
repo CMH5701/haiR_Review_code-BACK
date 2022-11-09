@@ -12,15 +12,11 @@
     font-style: normal;
 }
 
-* {
-    font-family: 'GangwonEdu_OTFBoldA';
+body {
+    background-color: #F7ECDA;
 }
 
-body {
-    font-family: 'GangwonEdu_OTFBoldA';
-    background-color: #E6DECF;
-    margin: 30px;
-}
+input {outline: none;}
 
 /* 네브바 시작 */
 
@@ -97,32 +93,53 @@ ul {
 
 /* 네브바 끝 */
 
-.submit {
-    margin: 1rem 0;
-    background-color: #E6DECF;
-    border: 1px solid #666666;
-    padding: 10px 20px;
-    transition: all 0.3s;
+form {
+    margin-top: 10vh;
+    margin-left: 2rem;
+    width: 40vw;
+    height: 40vh;
+}
+
+.edit-btn {
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #A79EB3;
+    border-radius: 5px;
+    border: solid #707070 1px;
+    background-color: white;
     cursor: pointer;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-left: 7px;
+}
+.edit-btn:hover {
+    color: #403964;
 }
 
-.submit:hover {
-    color: #E6DECF;
-    background-color: #666666;
-    transform: translateY(-4px);
+th > label {
+    display: none;
 }
 
-#id_name {
-    background-color: #E6DECF;
-    border: none;
-    border-bottom: 1px solid #666666;
+#id_r_title {
+    width: 40vw;
+    height: 20px;
+    border: 1px solid #707070;
+    border-radius: 3px;
 }
-#id_name:focus {outline: none;}
 
-a {
-    text-decoration: none;
-    color: #666666;
+#id_r_body {
+    font-family: 'Pretendard-Regular';
+    width: 40vw;
+    height: 40vh;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    outline: none;
 }
-a:hover {
-    color: #8F87A7;
+
+#id_r_photo {
+    color: #A79EB3;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+#id_hashtags {
+    font-family: 'Pretendard-Regular';
 }

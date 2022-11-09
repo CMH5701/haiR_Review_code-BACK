@@ -91,13 +91,9 @@ form {
     color: #403964;
 }/* id로 하면 되고 class로 하면 왜 안 되지...? */
 
-ul {
-    list-style:none;
-}
+ul {list-style: none;}
 
-#list_now {
-	color: #403964;
-}
+#list_now {color: #403964;}
 
 /* 네브바 끝 */
 
@@ -127,11 +123,9 @@ ul {
     background-color: white;
     margin-left: 1rem;
 }
+.r_write:hover {color: #403964;}
 
-footer {
-    margin-left: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+#id_r_body {height: 40vh;}
+#id_r_body:focus {outline: none;}
+
+input:focus {outline: none;}
